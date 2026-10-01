@@ -23,7 +23,7 @@ pkg=vyatta-debian-system-config
 case "$1" in
     configure)
 	# init of daemon is controlled by Vyatta configuration
-	for init in ntp snmpd openhpid logd isc-dhcp-relay \
+	for init in ntpsec snmpd openhpid logd isc-dhcp-relay \
             isc-dhcp-server ipvsadm ddclient radvd hostapd
 	do
 	    update-rc.d -f ${init} remove >/dev/null
