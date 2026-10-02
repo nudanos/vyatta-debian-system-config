@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+case "$1" in
+    remove|purge)
+        # postinst masked ctrl-alt-del.target
+        if [ "$(readlink /etc/systemd/system/ctrl-alt-del.target 2>/dev/null)" = /dev/null ]; then
+            rm -f /etc/systemd/system/ctrl-alt-del.target
+        fi
+        ;;
+esac
+#DEBHELPER#
+exit 0
