@@ -1,3 +1,2 @@
 /etc/cron.d/vyatta-cron
-/lib/systemd/system/ModemManager.service.d/default-filtering.conf
-
+lib/systemd/system/ModemManager.service.d/default-filtering.conf usr/lib/systemd/system/ModemManager.service.d
