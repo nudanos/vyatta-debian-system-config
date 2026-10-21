@@ -17,9 +17,6 @@ set -e
 # for details, see http://www.debian.org/doc/debian-policy/ or
 # the debian-policy package
 
-sysconfdir=/opt/vyatta/etc
-pkg=vyatta-debian-system-config
-
 case "$1" in
     configure)
 	# init of daemon is controlled by Vyatta configuration
