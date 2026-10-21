@@ -1,3 +1,10 @@
+vyatta-debian-system-config (1.24) trixie; urgency=medium
+
+  * Code-quality lint fixes (distro docs/porting.md): analyzer findings
+    fixed, see the git log.
+
+ -- NuDanOS Maintainers <jon@fernandez.tech>  Wed, 21 Oct 2026 17:36:32 +0000
+
 vyatta-debian-system-config (1.23) trixie; urgency=medium
 
   * postrm: unmask ctrl-alt-del.target, which postinst masks.
